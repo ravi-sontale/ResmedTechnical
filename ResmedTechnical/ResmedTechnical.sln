@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{2B30D92A-BD97-4D80-99E3-28B4EF3B08DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{035C51B1-7E6B-430C-B0D2-AC8DF9ADAB08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{2E6881CE-204E-4249-9657-3DA03E2DC6C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{4B2874DF-F40C-41FF-AF1D-3EDF2101111C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6207B795-A5E7-4DAA-81A5-ED146B88F56A}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		ResmedTechnical.vsmdi = ResmedTechnical.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resmed.Stock.Service", "Server\Resmed.Stock.Service\Resmed.Stock.Service.csproj", "{FCCF3449-4904-4AAE-BF03-01B890377C1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resmed.Stock.ClientService", "Client\Resmed.Stock.ClientService\Resmed.Stock.ClientService.csproj", "{20E191DD-2898-4352-866C-25039E7D8028}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FCCF3449-4904-4AAE-BF03-01B890377C1F} = {FCCF3449-4904-4AAE-BF03-01B890377C1F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resmed.Stock.DataModel", "Server\Resmed.Stock.DataModel\Resmed.Stock.DataModel.csproj", "{3B42E454-9E6E-41D1-AC58-D80FE630DFFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resmed.Stock.Common", "Common\Resmed.Stock.Common\Resmed.Stock.Common.csproj", "{31AD72F4-1374-46C1-9D36-5DA0BB287059}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resmed.Stock.Test", "Test\Resmed.Stock.Test\Resmed.Stock.Test.csproj", "{76067668-F165-49BE-9FE4-AAB3D737C362}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resmed.Stock.Web", "Resmed.Stock.Web\Resmed.Stock.Web.csproj", "{189426C5-738F-476A-B6FB-5B93031ADA5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resmed.Stock.Web.Tests", "Resmed.Stock.Web.Tests\Resmed.Stock.Web.Tests.csproj", "{72F541DB-D5F6-4E89-B22E-0B79E1933913}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ResmedTechnical.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCCF3449-4904-4AAE-BF03-01B890377C1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCCF3449-4904-4AAE-BF03-01B890377C1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCCF3449-4904-4AAE-BF03-01B890377C1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCCF3449-4904-4AAE-BF03-01B890377C1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20E191DD-2898-4352-866C-25039E7D8028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E191DD-2898-4352-866C-25039E7D8028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20E191DD-2898-4352-866C-25039E7D8028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20E191DD-2898-4352-866C-25039E7D8028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B42E454-9E6E-41D1-AC58-D80FE630DFFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B42E454-9E6E-41D1-AC58-D80FE630DFFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B42E454-9E6E-41D1-AC58-D80FE630DFFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B42E454-9E6E-41D1-AC58-D80FE630DFFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31AD72F4-1374-46C1-9D36-5DA0BB287059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31AD72F4-1374-46C1-9D36-5DA0BB287059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31AD72F4-1374-46C1-9D36-5DA0BB287059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31AD72F4-1374-46C1-9D36-5DA0BB287059}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76067668-F165-49BE-9FE4-AAB3D737C362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76067668-F165-49BE-9FE4-AAB3D737C362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76067668-F165-49BE-9FE4-AAB3D737C362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76067668-F165-49BE-9FE4-AAB3D737C362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{189426C5-738F-476A-B6FB-5B93031ADA5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{189426C5-738F-476A-B6FB-5B93031ADA5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{189426C5-738F-476A-B6FB-5B93031ADA5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{189426C5-738F-476A-B6FB-5B93031ADA5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72F541DB-D5F6-4E89-B22E-0B79E1933913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72F541DB-D5F6-4E89-B22E-0B79E1933913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72F541DB-D5F6-4E89-B22E-0B79E1933913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72F541DB-D5F6-4E89-B22E-0B79E1933913}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{20E191DD-2898-4352-866C-25039E7D8028} = {2B30D92A-BD97-4D80-99E3-28B4EF3B08DF}
+		{189426C5-738F-476A-B6FB-5B93031ADA5E} = {2B30D92A-BD97-4D80-99E3-28B4EF3B08DF}
+		{72F541DB-D5F6-4E89-B22E-0B79E1933913} = {2B30D92A-BD97-4D80-99E3-28B4EF3B08DF}
+		{FCCF3449-4904-4AAE-BF03-01B890377C1F} = {035C51B1-7E6B-430C-B0D2-AC8DF9ADAB08}
+		{3B42E454-9E6E-41D1-AC58-D80FE630DFFA} = {035C51B1-7E6B-430C-B0D2-AC8DF9ADAB08}
+		{76067668-F165-49BE-9FE4-AAB3D737C362} = {2E6881CE-204E-4249-9657-3DA03E2DC6C5}
+		{31AD72F4-1374-46C1-9D36-5DA0BB287059} = {4B2874DF-F40C-41FF-AF1D-3EDF2101111C}
+	EndGlobalSection
+EndGlobal
